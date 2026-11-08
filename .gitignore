@@ -1,0 +1,7 @@
+# Generated build trees and local capture outputs.
+/build*/
+**/build/
+__pycache__/
+*.py[cod]
+*.rgb
+*.ppm

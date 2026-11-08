@@ -1,0 +1,6 @@
+STAT clock=133000000 spi=66500000 grid=32 p=834 it=8 sim_hz_x10=600 fps_x10=600 sim_us=15350 peak_us=15524 raster_us=5925 lcd_us=16010 late=0 clip=0 imu=6b raw=289/625/-3982 touch=1 i2c_err=0 axis=1/-1/1
+STAT clock=133000000 spi=66500000 grid=32 p=834 it=8 sim_hz_x10=600 fps_x10=600 sim_us=15340 peak_us=15386 raster_us=5923 lcd_us=16011 late=0 clip=0 imu=6b raw=288/629/-3984 touch=1 i2c_err=0 axis=1/-1/1
+STAT clock=133000000 spi=66500000 grid=32 p=834 it=8 sim_hz_x10=600 fps_x10=600 sim_us=15339 peak_us=15392 raster_us=5924 lcd_us=16011 late=0 clip=0 imu=6b raw=289/629/-3986 touch=1 i2c_err=0 axis=1/-1/1
+STAT clock=133000000 spi=66500000 grid=32 p=834 it=8 sim_hz_x10=600 fps_x10=600 sim_us=15345 peak_us=15375 raster_us=5922 lcd_us=16010 late=0 clip=0 imu=6b raw=286/629/-3979 touch=1 i2c_err=0 axis=1/-1/1
+STAT clock=133000000 spi=66500000 grid=32 p=834 it=8 sim_hz_x10=600 fps_x10=600 sim_us=15355 peak_us=15385 raster_us=5925 lcd_us=16011 late=0 clip=0 imu=6b raw=288/634/-3982 touch=1 i2c_err=0 axis=1/-1/1
+STAT clock=133000000 spi=66500000 grid=32 p=834 it=8 sim_hz_x10=600 fps_x10=600 sim_us=15355 peak_us=15400 raster_us=5923 lcd_us=16010 late=0 clip=0 imu=6b raw=294/624/-3987 touch=1 i2c_err=0 axis=1/-1/1

@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Pico Debug (Cortex-Debug)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/flip_rp2040.elf",
+            "servertype": "openocd",
+            "serverpath": "${command:raspberry-pi-pico.getOpenOCDRoot}/openocd",
+            "windows": {
+                "serverpath": "${command:raspberry-pi-pico.getOpenOCDRoot}/openocd.exe"
+            },
+            "searchDir": [
+                "${command:raspberry-pi-pico.getOpenOCDRoot}/scripts"
+            ],
+            "gdbPath": "${command:raspberry-pi-pico.getGDBPath}",
+            "device": "RP2040",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "target/rp2040.cfg"
+            ],
+            "svdFile": "${workspaceFolder}/build/RP2040.svd",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "Compile Project",
+            "openOCDLaunchCommands": [
+                "adapter speed 5000"
+            ],
+            "overrideLaunchCommands": [
+                "monitor reset init",
+                "load \"${workspaceFolder}/build/flip_rp2040.elf\""
+            ]
+        }
+    ]
+}

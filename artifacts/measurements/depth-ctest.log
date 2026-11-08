@@ -1,0 +1,10 @@
+Internal ctest changing into directory: /home/alan/Learning/FLIP-RP2040/build-host
+Test project /home/alan/Learning/FLIP-RP2040/build-host
+    Start 1: fluid_stability
+1/2 Test #1: fluid_stability ..................   Passed    3.93 sec
+    Start 2: render_depth_and_bezel
+2/2 Test #2: render_depth_and_bezel ...........   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   3.94 sec

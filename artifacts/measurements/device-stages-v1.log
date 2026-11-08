@@ -1,0 +1,4 @@
+STAGES integrate=1079 separate=10959 p2g=3745 project=4055 g2p=4596
+IMU regs: 05 7c 40 25 00 00 00 00 01 timestamp=000c6e
+STAT clock=133000000 spi=33250000 grid=32 p=834 it=12 sim_hz_x10=400 fps_x10=306 sim_us=24235 peak_us=24435 raster_us=7676 lcd_us=33033 late=31 clip=167 imu=6b raw=-3937/592/-1004 touch=1 i2c_err=1 axis=-1/1/0
+STAT clock=133000000 spi=33250000 grid=32 p=834 it=12 sim_hz_x10=399 fps_x10=299 sim_us=24326 peak_us=24472 raster_us=7675 lcd_us=33032 late=35 clip=171 imu=6b raw=-3945/609/-1104 touch=1 i2c_err=1 axis=-1/1/0

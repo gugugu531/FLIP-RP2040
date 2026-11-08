@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+  66472	      0	 195728	 262200	  40038	build-pendant/main.elf

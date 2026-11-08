@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-08",
+  "board": "Waveshare RP2040-Touch-LCD-1.28",
+  "sdk": "2.2.0",
+  "compiler": "ARM GCC 14.2.1",
+  "cpu_hz": 133000000,
+  "spi_hz": 66500000,
+  "default_grid": 32,
+  "default_particles": 834,
+  "default_pressure_iterations": 8,
+  "imu_map": "gx=ay; gy=-ax",
+  "uf2_sha256": "6650e3ecd4adf391af185b6bd2bda471d16e990326c821d50e571a66525d1b25",
+  "source_sha256": {
+    "main.c": "82db245fc68e69d7f27b800cda6b330cc98edf7fdd91ab00357e2a411572dda8",
+    "CMakeLists.txt": "de26ffc5471529dce91d128a9d0f42b49e4c7bb649b6fd1053f4d1d00379a621",
+    "include/fluid.h": "821cf0ea926e3feb004487e7d72db094e146d3520039230e640fc16716f2216d",
+    "src/fluid.c": "cae7b56e7b6ce3dcecf86454a7ec82063c8f78af176ce73d4960f2167318abee",
+    "src/render.c": "adadbcf150edf9e756956303949a0525555b8ad0cfce215953f5e0619066cabc",
+    "lib/Config/DEV_Config.c": "eb1c58651da7c41f88f9c422fb791daa73468673d55b210642b3c2059f08e655",
+    "lib/Config/DEV_Config.h": "c8e8e36f89986e2766f5f8d77e0eddf699956cdfb3d0ef675d8b557ea54f21dc",
+    "lib/LCD/LCD_1in28.c": "6c51cefab4aedf8c240f55ebbab7c40b1d69e6832f2486b51222e1ac57649ff0",
+    "lib/LCD/LCD_1in28.h": "f6599a56759e56d4497ae2598dc65db834b105ceed8d31235cba2dd0fc26dbe9"
+  },
+  "verification": [
+    "ASan/UBSan CTest: fluid_stability and render_depth_and_bezel passed",
+    "Rotation regression: identical-depth colour, including deep water in upper half; native rim; strips equal full frame",
+    "12-second device-depth.log: six windows at 60 FPS; late=0, clip=0, i2c_err=0",
+    "Original nine-point solver matrix retained; solver unchanged"
+  ],
+  "render_style": "surface-distance pixel water, native-resolution supersampled brass bezel",
+  "render_scale": 4
+}

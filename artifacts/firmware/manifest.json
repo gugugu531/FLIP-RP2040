@@ -1,0 +1,43 @@
+{
+  "project": "flip_rp2040",
+  "date": "2026-11-08",
+  "board": "Waveshare RP2040-Touch-LCD-1.28",
+  "sdk": "2.2.0",
+  "compiler": "ARM GCC 14.2.1",
+  "configuration": {
+    "cpu_hz": 133000000,
+    "spi_hz": 66500000,
+    "default_grid": 32,
+    "default_particles": 834,
+    "default_pressure_iterations": 8,
+    "imu_map": "gx=ay; gy=-ax",
+    "render_scale": 4,
+    "render_style": "surface-distance pixel water, native-resolution supersampled brass bezel"
+  },
+  "build_type": "Release",
+  "uf2_sha256": "bd8f3696079305417ddd4dd45426e0ebff9f9b4f288fc32f252ac9bf0ee34f23",
+  "bin_sha256": "32dfb2a0e1637e2eb4c2c36127832582f3338d73718b60ca5f006b71e53a3935",
+  "source_sha256": {
+    "CMakeLists.txt": "4d311892e5035249e287559784992292efaa026e56bc63d07bc7a3fb7b9bbe20",
+    "pico_sdk_import.cmake": "8487a38ed07af12cd8908fd6766bf0e045896fc60f855e8d06ace3b93abfc514",
+    "tools/build.sh": "36fa2231afda2fa75f44bb427b34f2f9228ec64770a21d828817c05b1cff1315",
+    "include/fluid.h": "3514daeaaf936cbeece59069520559329638c4dd1f4c52b4910f54b3cfcd267c",
+    "src/fluid.c": "cae7b56e7b6ce3dcecf86454a7ec82063c8f78af176ce73d4960f2167318abee",
+    "src/main.c": "722edade0f21cf00e4cfa363f426bd3cded038a8c8b67893868f9ac7894fbc9c",
+    "src/render.c": "79161cd7b2bed93e28fee405073286d5731984b104a441e7e8314e7fc71d558a",
+    "lib/Config/CMakeLists.txt": "4d9483f734db8b035bd2aad6fd0c6417afe586215c3cc1f418e907e51312a7ce",
+    "lib/Config/DEV_Config.c": "eb1c58651da7c41f88f9c422fb791daa73468673d55b210642b3c2059f08e655",
+    "lib/Config/DEV_Config.h": "c8e8e36f89986e2766f5f8d77e0eddf699956cdfb3d0ef675d8b557ea54f21dc",
+    "lib/Config/Debug.h": "97c88f6847b5c52ec233f82478597ca350647d9d59ef6986b4d90df3641130b9",
+    "lib/LCD/CMakeLists.txt": "21d4922c263576ecfea011ea3adb8250a323f6bf0abc632ab11f40cf7c5c0d56",
+    "lib/LCD/LCD_1in28.c": "6c51cefab4aedf8c240f55ebbab7c40b1d69e6832f2486b51222e1ac57649ff0",
+    "lib/LCD/LCD_1in28.h": "f6599a56759e56d4497ae2598dc65db834b105ceed8d31235cba2dd0fc26dbe9"
+  },
+  "verification": {
+    "firmware": "Release via Pico extension task commands and independent CLI; BIN identical between both builds; Debug build passed",
+    "host": "Optional fluid_stability and render_depth_and_bezel checks passed under ASan/UBSan; tests disabled by default",
+    "device": "Not reflashed or remeasured after project renaming; SWD hardware debugging not tested",
+    "previous_measured_uf2_sha256": "6650e3ecd4adf391af185b6bd2bda471d16e990326c821d50e571a66525d1b25",
+    "previous_measurement": "../measurements/device-depth.log; solver and renderer sources unchanged; program name and startup banner renamed"
+  }
+}
